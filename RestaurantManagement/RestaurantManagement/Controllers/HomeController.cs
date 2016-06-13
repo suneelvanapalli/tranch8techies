@@ -10,6 +10,7 @@ namespace RestaurantManagement.Controllers
     {
         public ActionResult Index()
         {
+            //Adding this comment and committing the change to check if Git integration is working
             return View();
         }
 
