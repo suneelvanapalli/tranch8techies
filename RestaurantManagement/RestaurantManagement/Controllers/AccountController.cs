@@ -18,6 +18,7 @@ namespace RestaurantManagement.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+        //this is test2 branch
         public AccountController()
         {
         }
