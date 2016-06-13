@@ -50,5 +50,9 @@ namespace RestaurantManagement.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+        [TestMethod]
+        public void Address()
+        {
+        }
     }
 }
