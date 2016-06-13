@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigiCartClient.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,16 @@ namespace DigiCartClient.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IProductService _productService;
+
+        public HomeController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         public ActionResult Index()
         {
+            ViewBag.IsProductExpired = _productService.IsProductExpired("ACX123");
             return View();
         }
 
